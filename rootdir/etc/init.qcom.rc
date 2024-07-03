@@ -201,7 +201,9 @@ on late-fs
     # turn off vblank irq immediately after turning off
     write /sys/module/drm/parameters/vblankoffdelay -1
 
-on early-boot
+    # Set low memory killer minfree values
+    write /sys/module/lowmemorykiller/parameters/minfree "15360,20480,25600,30720,35840,40960"
+
     # Wait for devices
     wait_for_prop vendor.all.devices.ready 1
 

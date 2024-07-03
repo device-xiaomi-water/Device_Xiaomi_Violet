@@ -70,8 +70,18 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # Incremental FS
 ro.incremental.enable=1
 
-# LMKD
-ro.config.low_ram=false
+# IMS
+ro.telephony.block_binder_thread_on_incoming_calls=false
+
+# LMK properties
+ro.lmk.debug=false
+ro.lmk.critical_upgrade=true
+ro.lmk.upgrade_pressure=80
+ro.lmk.downgrade_pressure=60
+
+# Set the minimum and maximum LMK kill thresholds (values in MB)
+ro.lmk.kill_threshold_min=1536
+ro.lmk.kill_threshold_max=4096
 
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
