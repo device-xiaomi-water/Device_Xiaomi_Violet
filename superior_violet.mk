@@ -17,6 +17,12 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 # MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
+#Device Props
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := false
+TARGET_DEBLOAT := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := superior_violet
 PRODUCT_DEVICE := violet
