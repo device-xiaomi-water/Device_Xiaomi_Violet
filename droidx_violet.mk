@@ -8,8 +8,8 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some commom DroidX-UI stuff.
-$(call inherit-product, vendor/droidx/config/common.mk)
+# Inherit some commom banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
@@ -20,8 +20,8 @@ TARGET_ENABLE_BLUR := false
 TARGET_DEBLOAT := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_CALL_RECORDING := true
-DROIDX_BUILD_TYPE := OFFICIAL
-DROIDX_GAPPS := true
+BANANA_BUILD_TYPE := OFFICIAL
+BANANA_GAPPS := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -30,7 +30,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := droidx_violeT
+PRODUCT_NAME := banana_violeT
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
