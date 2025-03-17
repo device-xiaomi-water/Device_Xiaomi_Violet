@@ -20,7 +20,11 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 BLISS_BUILDTYPE := UNOFFICIAL
-# bliss_GAPPS := true
+
+# Gapps
+TARGET_ESSENTIAL_GAPPS := true
+TARGET_STOCK_GAPPS := true
+
 
 # Device Props
 TARGET_FACE_UNLOCK_SUPPORTED := true
