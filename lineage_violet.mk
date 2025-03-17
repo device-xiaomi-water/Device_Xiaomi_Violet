@@ -8,22 +8,23 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit common Bliss configurations
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Inherit common MistOs configurations
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-$(call inherit-product, vendor/bliss/config/BoardConfigReservedSize.mk)
+$(call inherit-product, vendor/lineage/config/BoardConfigReservedSize.mk)
 
 # MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# bliss Props
+# lineage Props
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_CALL_RECORDING := true
-BLISS_BUILDTYPE := UNOFFICIAL
+MIST_BUILDTYPE := UNOFFICIAL
+MISTOS_MAINTAINER := NINJA
 
 # Gapps
-TARGET_ESSENTIAL_GAPPS := true
-TARGET_STOCK_GAPPS := true
+#TARGET_ESSENTIAL_GAPPS := true
+#TARGET_STOCK_GAPPS := true
 
 
 # Device Props
@@ -39,7 +40,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_violet
+PRODUCT_NAME := lineage_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
