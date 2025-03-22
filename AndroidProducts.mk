@@ -1,14 +1,14 @@
 #
-# Copyright (C) 2018-2020 The genesisOS Project
+# Copyright (C) 2018-2020 The CLOVEROS Project
 # Copyright (C) 2020 The PixelExperience Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/genesis_violet.mk
+    $(LOCAL_DIR)/clover_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    genesis_violet-ap1a-eng \
-    genesis_violet-ap1a-userdebug \
-    genesis_violet-ap1a-user
+    clover_violet-ap1a-eng \
+    clover_violet-ap1a-userdebug \
+    clover_violet-ap1a-user
