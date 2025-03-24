@@ -8,9 +8,9 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common clover stuff.
-$(call inherit-product, vendor/clover/config/common_full_phone.mk)
-$(call inherit-product, vendor/clover/config/BoardConfigReservedSize.mk)
+# Inherit some common fortune stuff.
+$(call inherit-product, vendor/fortune/config/common_full_phone.mk)
+$(call inherit-product, vendor/fortune/config/BoardConfigReservedSize.mk)
 
 # MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
@@ -18,8 +18,8 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 # lineage Props
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_CALL_RECORDING := true
-CLOVER_BUILDTYPE := UNOFFICIAL
-CLOVER_MAINTAINER := NINJA
+FORTUNE_BUILDTYPE := UNOFFICIAL
+FORTUNE_MAINTAINER := NINJA
 
 # Gapps
 WITH_GAPPS := true
@@ -37,7 +37,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := clover_violet
+PRODUCT_NAME := fortune_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
